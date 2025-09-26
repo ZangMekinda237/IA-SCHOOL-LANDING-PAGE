@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact Us - IA School</title>
+    <meta name="description" content="Get in touch with IA School. Contact information, location, and inquiry form." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-hv9z0wKq7oQh4UO7wqvYtq0o0CWHk1TzZQwq8w2oVg0v3jzqkDP3wJ2M8kH8Y7Qk2Qb9DPg1m2m3m2m" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-content">
+        <div class="loading-logo">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="loading-text">IA School</div>
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="logo-section">
+          <a href="index.html" class="logo-link">
+            <i class="fas fa-graduation-cap"></i>
+            <span>IA School</span>
+          </a>
+        </div>
+        <div class="top-right">
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="academics.html" class="nav-link">Academics</a></li>
+          <li><a href="news.html" class="nav-link">News</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="students.html" class="nav-link">Students</a></li>
+          <li><a href="parents.html" class="nav-link">Parents</a></li>
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you</p>
+      </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="section contact-info">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Address</h3>
+            <p>123 Education Street<br>Learning City, LC 12345<br>United States</p>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Phone</h3>
+            <p>Main Office: (555) 123-4567<br>Admissions: (555) 123-4568<br>Emergency: (555) 123-4569</p>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>General: info@iaschool.edu<br>Admissions: admissions@iaschool.edu<br>Support: support@iaschool.edu</p>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Hours</h3>
+            <p>Monday - Friday: 8:00 AM - 4:00 PM<br>Saturday: 9:00 AM - 1:00 PM<br>Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="section contact-form-section">
+      <div class="container">
+        <div class="form-map-grid">
+          <div class="contact-form-container">
+            <h2>Send us a Message</h2>
+            <form class="contact-form" id="contact-form">
+              <div class="form-row">
+                <div class="form-field">
+                  <input type="text" id="firstName" name="firstName" required />
+                  <label for="firstName">First Name</label>
+                </div>
+                <div class="form-field">
+                  <input type="text" id="lastName" name="lastName" required />
+                  <label for="lastName">Last Name</label>
+                </div>
+              </div>
+              
+              <div class="form-field">
+                <input type="email" id="email" name="email" required />
+                <label for="email">Email Address</label>
+              </div>
+              
+              <div class="form-field">
+                <input type="tel" id="phone" name="phone" />
+                <label for="phone">Phone Number</label>
+              </div>
+              
+              <div class="form-field">
+                <select id="subject" name="subject" required>
+                  <option value="">Select a Subject</option>
+                  <option value="admissions">Admissions Inquiry</option>
+                  <option value="academic">Academic Questions</option>
+                  <option value="general">General Information</option>
+                  <option value="support">Technical Support</option>
+                  <option value="other">Other</option>
+                </select>
+                <label for="subject">Subject</label>
+              </div>
+              
+              <div class="form-field">
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Message</label>
+              </div>
+              
+              <button type="submit" class="btn btn-accent btn-ripple">Send Message</button>
+            </form>
+          </div>
+          
+          <div class="map-container">
+            <h2>Find Us</h2>
+            <div class="map-placeholder">
+              <i class="fas fa-map-marked-alt"></i>
+              <p>Interactive Map</p>
+              <p>123 Education Street, Learning City, LC 12345</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+      <div class="container">
+        <h2 class="section-title center">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>What are the school hours?</h4>
+            <p>Regular school hours are 8:00 AM to 3:00 PM, Monday through Friday. Extended care is available until 6:00 PM.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h4>How do I apply for admission?</h4>
+            <p>You can apply online through our admissions portal or contact our admissions office at (555) 123-4568.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h4>What extracurricular activities are available?</h4>
+            <p>We offer a wide range of activities including sports, arts, robotics, debate, and community service programs.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h4>Is transportation provided?</h4>
+            <p>Yes, we provide bus transportation to most areas within a 15-mile radius of the school.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-section">
+          <div class="footer-brand">
+            <h3><i class="fas fa-graduation-cap"></i> IA School</h3>
+            <p>Excellence in Education. Preparing students for a bright future through innovative learning and dedicated teaching.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="footer.html">Footer Page</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Student Resources</h4>
+          <ul>
+            <li><a href="students.html">Student Portal</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="news.html">News & Updates</a></li>
+            <li><a href="parents.html">Parent Resources</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Learning City, LC 12345</p>
+            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@iaschool.edu</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; <span id="currentYear"></span> IA School. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

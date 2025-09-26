@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Admissions - IA School</title>
+    <meta name="description" content="Apply to IA School. Learn about our admissions process, requirements, and how to join our community." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-hv9z0wKq7oQh4UO7wqvYtq0o0CWHk1TzZQwq8w2oVg0v3jzqkDP3wJ2M8kH8Y7Qk2Qb9DPg1m2m3m2m" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-content">
+        <div class="loading-logo">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="loading-text">IA School</div>
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="logo-section">
+          <a href="index.html" class="logo-link">
+            <i class="fas fa-graduation-cap"></i>
+            <span>IA School</span>
+          </a>
+        </div>
+        <div class="top-right">
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="academics.html" class="nav-link">Academics</a></li>
+          <li><a href="news.html" class="nav-link">News</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="students.html" class="nav-link">Students</a></li>
+          <li><a href="parents.html" class="nav-link">Parents</a></li>
+          <li><a href="admissions.html" class="nav-link active">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Admissions</h1>
+        <p>Join the IA School Community</p>
+      </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="section application-process">
+      <div class="container">
+        <h2 class="section-title center">Application Process</h2>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-number">1</div>
+            <h3>Submit Application</h3>
+            <p>Complete our online application form with all required documents and information.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="process-number">2</div>
+            <h3>Review & Interview</h3>
+            <p>Our admissions team will review your application and schedule an interview if needed.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="process-number">3</div>
+            <h3>Decision & Enrollment</h3>
+            <p>Receive your admission decision and complete the enrollment process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="section application-form">
+      <div class="container">
+        <h2 class="section-title center">Apply Now</h2>
+        <div class="form-container">
+          <form class="admission-form" id="admission-form">
+            <div class="form-section">
+              <h3>Student Information</h3>
+              <div class="form-row">
+                <div class="form-field">
+                  <input type="text" id="firstName" name="firstName" required />
+                  <label for="firstName">First Name</label>
+                </div>
+                <div class="form-field">
+                  <input type="text" id="lastName" name="lastName" required />
+                  <label for="lastName">Last Name</label>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-field">
+                  <input type="date" id="birthDate" name="birthDate" required />
+                  <label for="birthDate">Date of Birth</label>
+                </div>
+                <div class="form-field">
+                  <select id="gradeLevel" name="gradeLevel" required>
+                    <option value="">Select Grade Level</option>
+                    <option value="K">Kindergarten</option>
+                    <option value="1">Grade 1</option>
+                    <option value="2">Grade 2</option>
+                    <option value="3">Grade 3</option>
+                    <option value="4">Grade 4</option>
+                    <option value="5">Grade 5</option>
+                    <option value="6">Grade 6</option>
+                    <option value="7">Grade 7</option>
+                    <option value="8">Grade 8</option>
+                    <option value="9">Grade 9</option>
+                    <option value="10">Grade 10</option>
+                    <option value="11">Grade 11</option>
+                    <option value="12">Grade 12</option>
+                  </select>
+                  <label for="gradeLevel">Grade Level</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-section">
+              <h3>Parent/Guardian Information</h3>
+              <div class="form-row">
+                <div class="form-field">
+                  <input type="text" id="parentFirstName" name="parentFirstName" required />
+                  <label for="parentFirstName">Parent First Name</label>
+                </div>
+                <div class="form-field">
+                  <input type="text" id="parentLastName" name="parentLastName" required />
+                  <label for="parentLastName">Parent Last Name</label>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-field">
+                  <input type="email" id="parentEmail" name="parentEmail" required />
+                  <label for="parentEmail">Parent Email</label>
+                </div>
+                <div class="form-field">
+                  <input type="tel" id="parentPhone" name="parentPhone" required />
+                  <label for="parentPhone">Parent Phone</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-section">
+              <h3>Additional Information</h3>
+              <div class="form-field">
+                <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Tell us about your child's interests, achievements, or any special considerations..."></textarea>
+                <label for="additionalInfo">Additional Information</label>
+              </div>
+            </div>
+            
+            <div class="form-actions">
+              <button type="submit" class="btn btn-accent">Submit Application</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="section requirements">
+      <div class="container">
+        <h2 class="section-title center">Admission Requirements</h2>
+        <div class="requirements-grid">
+          <div class="requirement-card">
+            <div class="requirement-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h3>Application Form</h3>
+            <p>Complete application with all required information and supporting documents.</p>
+          </div>
+          
+          <div class="requirement-card">
+            <div class="requirement-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Academic Records</h3>
+            <p>Previous school transcripts and academic performance records.</p>
+          </div>
+          
+          <div class="requirement-card">
+            <div class="requirement-icon">
+              <i class="fas fa-user-friends"></i>
+            </div>
+            <h3>Recommendations</h3>
+            <p>Teacher recommendations and character references.</p>
+          </div>
+          
+          <div class="requirement-card">
+            <div class="requirement-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Interview</h3>
+            <p>Family interview to discuss educational goals and expectations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-section">
+          <div class="footer-brand">
+            <h3><i class="fas fa-graduation-cap"></i> IA School</h3>
+            <p>Excellence in Education. Preparing students for a bright future through innovative learning and dedicated teaching.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="footer.html">Footer Page</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Student Resources</h4>
+          <ul>
+            <li><a href="students.html">Student Portal</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="news.html">News & Updates</a></li>
+            <li><a href="parents.html">Parent Resources</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Learning City, LC 12345</p>
+            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@iaschool.edu</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; <span id="currentYear"></span> IA School. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

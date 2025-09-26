@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Student Resources - IA School</title>
+    <meta name="description" content="Student portal and resources for IA School students. Access grades, assignments, and school information." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-hv9z0wKq7oQh4UO7wqvYtq0o0CWHk1TzZQwq8w2oVg0v3jzqkDP3wJ2M8kH8Y7Qk2Qb9DPg1m2m3m2m" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-content">
+        <div class="loading-logo">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="loading-text">IA School</div>
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="logo-section">
+          <a href="index.html" class="logo-link">
+            <i class="fas fa-graduation-cap"></i>
+            <span>IA School</span>
+          </a>
+        </div>
+        <div class="top-right">
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="academics.html" class="nav-link">Academics</a></li>
+          <li><a href="news.html" class="nav-link">News</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="students.html" class="nav-link active">Students</a></li>
+          <li><a href="parents.html" class="nav-link">Parents</a></li>
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Student Resources</h1>
+        <p>Everything you need for academic success</p>
+      </div>
+    </section>
+
+    <!-- Student Portal -->
+    <section class="section student-portal">
+      <div class="container">
+        <h2 class="section-title center">Student Portal</h2>
+        <div class="portal-grid">
+          <div class="portal-card">
+            <div class="portal-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Grades & Progress</h3>
+            <p>View your academic performance, grades, and progress reports in real-time.</p>
+            <a href="#" class="btn btn-outline">View Grades</a>
+          </div>
+          
+          <div class="portal-card">
+            <div class="portal-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <h3>Assignments</h3>
+            <p>Access your homework, projects, and upcoming assignments with due dates.</p>
+            <a href="#" class="btn btn-outline">View Assignments</a>
+          </div>
+          
+          <div class="portal-card">
+            <div class="portal-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <h3>Schedule</h3>
+            <p>Check your class schedule, exam dates, and important school events.</p>
+            <a href="#" class="btn btn-outline">View Schedule</a>
+          </div>
+          
+          <div class="portal-card">
+            <div class="portal-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>Library</h3>
+            <p>Access digital resources, e-books, and research materials online.</p>
+            <a href="#" class="btn btn-outline">Access Library</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Resources -->
+    <section class="section academic-resources">
+      <div class="container">
+        <h2 class="section-title center">Academic Resources</h2>
+        <div class="resources-grid">
+          <div class="resource-card">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=600&auto=format&fit=crop" alt="Study groups" />
+            <div class="resource-content">
+              <h3>Study Groups</h3>
+              <p>Join study groups and collaborate with your peers on challenging subjects.</p>
+              <ul>
+                <li>Math Study Group - Mondays 3:30 PM</li>
+                <li>Science Study Group - Wednesdays 3:30 PM</li>
+                <li>Language Arts - Fridays 3:30 PM</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="resource-card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop" alt="Tutoring services" />
+            <div class="resource-content">
+              <h3>Tutoring Services</h3>
+              <p>Get personalized help from qualified tutors in various subjects.</p>
+              <ul>
+                <li>One-on-one tutoring sessions</li>
+                <li>Group tutoring for specific subjects</li>
+                <li>Online tutoring available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Life -->
+    <section class="section student-life">
+      <div class="container">
+        <h2 class="section-title center">Student Life</h2>
+        <div class="life-grid">
+          <div class="life-card">
+            <div class="life-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Clubs & Organizations</h3>
+            <p>Join various clubs and organizations to explore your interests and make new friends.</p>
+            <div class="club-list">
+              <span class="club-tag">Robotics Club</span>
+              <span class="club-tag">Debate Team</span>
+              <span class="club-tag">Art Society</span>
+              <span class="club-tag">Sports Teams</span>
+            </div>
+          </div>
+          
+          <div class="life-card">
+            <div class="life-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Achievements</h3>
+            <p>Celebrate your academic and extracurricular achievements with our recognition program.</p>
+            <div class="achievement-list">
+              <span class="achievement-item">Honor Roll</span>
+              <span class="achievement-item">Perfect Attendance</span>
+              <span class="achievement-item">Community Service</span>
+            </div>
+          </div>
+          
+          <div class="life-card">
+            <div class="life-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Leadership</h3>
+            <p>Develop leadership skills through student government and leadership programs.</p>
+            <div class="leadership-list">
+              <span class="leadership-item">Student Council</span>
+              <span class="leadership-item">Peer Mentoring</span>
+              <span class="leadership-item">Event Planning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-section">
+          <div class="footer-brand">
+            <h3><i class="fas fa-graduation-cap"></i> IA School</h3>
+            <p>Excellence in Education. Preparing students for a bright future through innovative learning and dedicated teaching.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="footer.html">Footer Page</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Student Resources</h4>
+          <ul>
+            <li><a href="students.html">Student Portal</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="news.html">News & Updates</a></li>
+            <li><a href="parents.html">Parent Resources</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Learning City, LC 12345</p>
+            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@iaschool.edu</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; <span id="currentYear"></span> IA School. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
